@@ -6,9 +6,9 @@ LIBS = -L/usr/lib/mysql -lmysqlclient -lz -lcrypt -lnsl -lm -L/usr/lib64 -lssl -
 OBJ = main.o db.o
 
 .c.o:
-	$(CC) -c $<
+	$(CC) -g -c $<
 main: $(OBJ)
-	$(CC) -o main $(OBJ) $(LIBS)
+	$(CC) -g -o main $(OBJ) $(LIBS)
 
 clean:
 	rm *.o
