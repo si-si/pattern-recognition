@@ -35,19 +35,6 @@ static int quik_recur(elem_t *data, int s, int f)
         return 1;
 }
 
-int main()
-{
-	elem_t data[20];
-	int i;
-	for (i = 0; i < 20; i++)
-		data[i].value = 20 - i;
-	quik_sort(data, 0, 19);
-	for (i = 0; i < 20; i++)
-		printf("%d   ", data[i].value);
-	printf("\n");
-	return 0;
-}
-
 int quik_sort(elem_t *data, int s, int f)
 {
         if (s > f){

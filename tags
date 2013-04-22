@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC = gcc$/;"	m
+DB	main.c	6;"	d	file:
+EQ	sort.h	10;"	d
+HOST	main.c	4;"	d	file:
+LE	sort.h	8;"	d
+LEN	main.c	8;"	d	file:
+LIBS	makefile	/^LIBS = -L\/usr\/lib\/mysql -lmysqlclient -lz -lcrypt -lnsl -lm -L\/usr\/lib64 -lssl -lcrypto$/;"	m
+LT	sort.h	9;"	d
+OBJ	makefile	/^OBJ = main.o db.o$/;"	m
+PASSWD	main.c	5;"	d	file:
+SE	sort.h	7;"	d
+ST	sort.h	6;"	d
+USER	main.c	3;"	d	file:
+_DMT_DB_	db.h	2;"	d
+_DMT_SORT_	sort.h	2;"	d
+change_pos	sort.c	/^static void change_pos(elem_t *p1, elem_t *p2)$/;"	f	file:
+db_deinit	db.c	/^static int db_deinit(private_db_handler *this)$/;"	f	file:
+db_deinit	db.h	/^	int (*db_deinit)(db_handler *this);$/;"	m	struct:db_handler
+db_handler	db.h	/^struct db_handler{$/;"	s
+db_handler	db.h	/^typedef struct db_handler db_handler;$/;"	t	typeref:struct:db_handler
+db_handler_create	db.c	/^db_handler *db_handler_create()$/;"	f
+db_init	db.c	/^static int db_init(private_db_handler *this, char *host, char *user, char *passwd, char *db, unsigned int port, const char *socket, unsigned long flag)$/;"	f	file:
+db_init	db.h	/^	int (*db_init)(db_handler *this, char *host, char *user, char *passwd, char *db, unsigned int port, const char *socket, unsigned long flag);$/;"	m	struct:db_handler
+db_query	db.c	/^static void *db_query(private_db_handler *this, char *sql, void *(*pfun)(MYSQL_RES *))$/;"	f	file:
+db_query	db.h	/^	void *(*db_query)(db_handler *this, char *sql, void *(*pfun)(MYSQL_RES *));$/;"	m	struct:db_handler
+elem_t	sort.h	/^struct elem_t{$/;"	s
+elem_t	sort.h	/^typedef struct elem_t elem_t;$/;"	t	typeref:struct:elem_t
+get_result	main.c	/^void *get_result(MYSQL_RES *res)$/;"	f
+get_value	main.c	/^void *get_value(MYSQL_RES *res)$/;"	f
+get_word	main.c	/^void *get_word(MYSQL_RES *res)$/;"	f
+main	main.c	/^int main()$/;"	f
+main	sort.c	/^int main()$/;"	f
+mysql	db.c	/^        MYSQL mysql;$/;"	m	struct:private_db_handler	file:
+p	sort.h	/^	void *p;$/;"	m	struct:elem_t
+partition	sort.c	/^static int partition(elem_t *data, int s, int f)$/;"	f	file:
+private_db_handler	db.c	/^struct private_db_handler{$/;"	s	file:
+private_db_handler	db.c	/^typedef struct private_db_handler private_db_handler;$/;"	t	typeref:struct:private_db_handler	file:
+public	db.c	/^        db_handler public;$/;"	m	struct:private_db_handler	file:
+quik_recur	sort.c	/^static int quik_recur(elem_t *data, int s, int f)$/;"	f	file:
+quik_sort	sort.c	/^int quik_sort(elem_t *data, int s, int f)$/;"	f
+sum	main.c	/^int *sum;$/;"	v
+value	sort.h	/^	int value;$/;"	m	struct:elem_t
+word_t	main.c	/^typedef char word_t[LEN];$/;"	t	file:
+words	main.c	/^word_t *words;$/;"	v

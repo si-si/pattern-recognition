@@ -39,14 +39,15 @@ static void *db_query(private_db_handler *this, char *sql, void *(*pfun)(MYSQL_R
 		return NULL;
 	}	
 	if (!(result = mysql_store_result(&this->mysql))){
-		printf("mysql_store_result error!\n");
+		//printf("mysql_store_result error!\n");
 		return NULL;
 	}
 	void *p = NULL;
 	if (pfun){
 		p = pfun(result);
 	}
-	mysql_free_result(result);
+	if (result)
+		mysql_free_result(result);
 	return p;
 }
 
